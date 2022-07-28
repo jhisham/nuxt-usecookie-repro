@@ -35,5 +35,5 @@ Click on the `Get Token` button to get back a JWT token from the API.
 *Note: the user and password to query has been setup so there's no need to enter anything on the frontend. But if for whatever reason you'd like to use another username, a list of available usernames is provided underneath the `Get Token` button. In the pages/index.vue file just change the username value to the username you want.*
 
 ## Open the Application tab
-In the browser open up developer console and click on the *Application* tab. `token1` and `token2` should be in the list of cookies but `token3` is missing.
+In the browser open up developer console and click on the *Application* tab. You should see `token1` and `token2` in the list of cookies but `token3` will be missing.
 The cookie value is also logged to the console. All three tokens (`token1`, `token2`, and `token3` values) should be be printed out to the console to verify that all 3 tokens have value.
