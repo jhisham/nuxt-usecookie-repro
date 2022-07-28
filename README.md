@@ -1,11 +1,11 @@
 # Issue
-There is an inconsistency in behavior when using useCookie when trying to populate value from external API.
-This repo has been created to reproduce the behavior.
+There is an inconsistency in behavior when using `useCookie` with `httpOnly` set to `true` when trying to set cookie value from external API vs setting cookie with local data.
+This repo has been created to reproduce that behavior.
 
 3 scenarios have been setup for useCookie:
-1. `useCookie()` set with local data (`httpOnly: true`)
+1. `useCookie()` set with local data (with `httpOnly: true`)
 2. `useCookie()` set with external data (`httpOnly` is not set which by default means `false`)
-3. `useCookie()` set with external data (`httpOnly; true`)
+3. `useCookie()` set with external data (with `httpOnly: true`)
 
 ## Expected behavior
 Cookies should be set in the browser for all 3 scenarios.
